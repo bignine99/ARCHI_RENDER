@@ -6,7 +6,7 @@ import type { ImageResolution, AspectRatio } from './types';
 
 // --- Authentication Constants ---
 const ADMIN_PASSWORD = '0172';
-const ADMIN_API_KEY = process.env.API_KEY || process.env.GEMINI_API_KEY || '';
+const ADMIN_API_KEY = process.env.API_KEY || process.env.GEMINI_API_KEY || 'AIzaSyDJt7iXIgNJ9LrqsDiRkvIjHG7H_bqSWLg';
 const MAX_FILE_SIZE_MB = 20;
 
 // --- Types ---
