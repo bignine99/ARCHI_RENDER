@@ -1,0 +1,6 @@
+
+{
+  "name": "3D 스캐치 랜더링 프로그램",
+  "description": "An application for architects to convert sketches into 2D/3D drawings, render them, and apply various architectural styles using the Gemini API. It allows for viewing the design from multiple angles and downloading the final image.",
+  "requestFramePermissions": []
+}
