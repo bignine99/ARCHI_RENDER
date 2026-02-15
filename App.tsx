@@ -476,7 +476,7 @@ export default function App() {
             <div className="text-center mb-16">
               <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold accent-text uppercase tracking-widest mb-4">Case Study</span>
               <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">프로그램 운영사례</h2>
-              <p className="text-base md:text-lg text-architect-sub font-medium max-w-xl mx-auto leading-relaxed">
+              <p className="text-base md:text-lg text-architect-sub font-medium max-w-2xl mx-auto leading-relaxed">
                 실제 프로젝트에서 ARCHI RENDER를 활용한 운영 과정을 영상으로 확인하세요.
               </p>
             </div>
