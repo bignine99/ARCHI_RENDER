@@ -396,6 +396,7 @@ export default function App() {
               <span className="hidden sm:inline-block px-2 py-0.5 rounded-full text-[10px] font-bold accent-bg text-white tracking-wider">v2.5</span>
             </div>
             <div className="flex items-center gap-6">
+              <a href="#case-study" className="hidden md:inline text-sm font-bold text-architect-sub hover:text-architect-main transition-colors">Case Study</a>
               <a href="#features" className="hidden md:inline text-sm font-bold text-architect-sub hover:text-architect-main transition-colors">Features</a>
               <a href="#workflow" className="hidden md:inline text-sm font-bold text-architect-sub hover:text-architect-main transition-colors">Workflow</a>
               <button onClick={handleStart} className="accent-bg text-white px-6 py-2.5 rounded-full text-sm font-black hover:opacity-90 transition-all btn-lift">
@@ -466,6 +467,42 @@ export default function App() {
                 <div className="text-sm text-architect-sub font-bold uppercase tracking-wider">{s.label}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Program Case Study — YouTube Embed */}
+        <section id="case-study" className="py-32 bg-white border-y border-architect-border">
+          <div className="max-w-[1000px] mx-auto px-10">
+            <div className="text-center mb-16">
+              <span className="inline-block px-3 py-1 rounded-full text-[11px] font-bold accent-text uppercase tracking-widest mb-4">Case Study</span>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">프로그램 운영사례</h2>
+              <p className="text-base md:text-lg text-architect-sub font-medium max-w-xl mx-auto leading-relaxed">
+                실제 프로젝트에서 ARCHI RENDER를 활용한 운영 과정을 영상으로 확인하세요.
+              </p>
+            </div>
+            <div className="group relative rounded-2xl overflow-hidden shadow-2xl shadow-black/10 border border-architect-border/50 hover:shadow-3xl hover:shadow-black/20 transition-all duration-500 hover:-translate-y-1">
+              {/* Decorative corner accents */}
+              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 accent-border rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 accent-border rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/_3B2YzZ94oc?rel=0&modestbranding=1"
+                  title="ARCHI RENDER 프로그램 운영사례"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+              {['AI 렌더링', '재질 시뮬레이션', '시네마틱 투어', '실시간 편집'].map((tag) => (
+                <span key={tag} className="px-4 py-2 rounded-full bg-architect-bg border border-architect-border text-sm font-bold text-architect-sub">
+                  ✦ {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
 
