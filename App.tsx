@@ -692,7 +692,7 @@ export default function App() {
                       value={authInput}
                       onChange={(e) => setAuthInput(e.target.value)}
                       onKeyDown={handleAuthKeyDown}
-                      placeholder="AIza..."
+                      placeholder="AIza... 또는 AQ..."
                       className="w-full bg-architect-bg border border-architect-border rounded-custom px-4 py-4 text-sm font-mono outline-none focus:ring-2 focus:ring-architect-main focus:border-transparent transition-all"
                       autoFocus
                     />
